@@ -15,3 +15,11 @@ git branch -M main -----> add repo to github
 git push -u origin main -----> add repo to github
 echo "# this is a test" >> README.md ----> add readme file to github repo
 git commit -a ---> automatically commit without staging without add
+git log -1 ----> 1st commit
+git log --stat ----> log detailed
+git log --patch ----> more detailed
+gir rm nameOfFile ----> remove file
+gir rm --cached name ----> untrack file
+git mv namee ----> change name of file 
+git checkout -b nameOfBranch ---> creat new branch
+git checkout master ----> return to master branch
