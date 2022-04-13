@@ -1,0 +1,17 @@
+Git init ----> create repo 
+git version -----> git version no 
+git add . ----> adding files to repo
+git commit ----> commit files to repo
+git commit -m ----> add name
+git status ----> show statues of repo commits 
+git deff //code// //code// -----> show diffrence between two commits 
+git checkout //code ----> get back to commit 
+git log ----> history
+git branch ----> create branch 
+git switch ----> switch branches
+git merge ---> merges branches
+git remote add origin https://github.com/Alii2121/git-test.git -----> add github repo to local cli
+git branch -M main -----> add repo to github
+git push -u origin main -----> add repo to github
+echo "# this is a test" >> README.md ----> add readme file to github repo
+git commit -a ---> automatically commit without staging without add
