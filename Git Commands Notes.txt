@@ -23,3 +23,9 @@ gir rm --cached name ----> untrack file
 git mv namee ----> change name of file 
 git checkout -b nameOfBranch ---> creat new branch
 git checkout master ----> return to master branch
+git stash ---> record working space
+git merge nameOfBranch ---> merge branches
+git reset --soft   ----> move commits to staging
+git reset ---->  back to working dir
+git reset --hard  ---> delete commit 
+git clone <url> ----> clone repo from github to pc 
