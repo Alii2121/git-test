@@ -29,3 +29,4 @@ git reset --soft   ----> move commits to staging
 git reset ---->  back to working dir
 git reset --hard  ---> delete commit 
 git clone <url> ----> clone repo from github to pc 
+git switch ---> alternate for git checkout (change branch)
