@@ -1,4 +1,4 @@
-Git init ----> create repo 
+git init ----> create repo 
 git version -----> git version no 
 git add . ----> adding files to repo
 git commit ----> commit files to repo
@@ -18,8 +18,9 @@ git commit -a ---> automatically commit without staging without add
 git log -1 ----> 1st commit
 git log --stat ----> log detailed
 git log --patch ----> more detailed
-gir rm nameOfFile ----> remove file
-gir rm --cached name ----> untrack file
+git log --graph --decorate --oneline ---> decorate log
+git rm nameOfFile ----> remove file
+git rm --cached name ----> untrack file
 git mv namee ----> change name of file 
 git checkout -b nameOfBranch ---> creat new branch
 git checkout master ----> return to master branch
@@ -30,3 +31,20 @@ git reset ---->  back to working dir
 git reset --hard  ---> delete commit 
 git clone <url> ----> clone repo from github to pc 
 git switch ---> alternate for git checkout (change branch)
+git cat-file -p hash1Code ---> peek inside file
+git count-objects ----> counts objects inside git database
+git rebase nameOfBRanch ----> rebases like merging but rebase
+git tag nameOfTag -a -m "message" ----> create a tag on a commit
+git stash ---> add file into stash for later 
+git stash --unclude-untracked  ---> add file into stash for later including untracked files
+git stash list ---> read stashed 
+git stash apply ---> retrieve data from stash 
+git stash clear ----> Clear data from satsh
+git add --patch ----> add only hunks of edits 
+git restore --staged ---> restore staged 
+git show HEAD^^ ---> show parent of parent commit
+git blame NameOfFile ----> show who made changes to file
+git rebase -i origin/master(nameofcommit) ----> edit from thoscommit to onwards (slice)
+git reflog HEAD ---> restore hashes
+git filter-branch OR git filter-repo --path FileNme --invert-paths ----> remove file from all commits
+git revert NameOfcommit ----> revert changes done by commit to delete it 
