@@ -1,0 +1,32 @@
+docker image build -t ALIMARAWAN2121/nameOfProj:name .   ----> build an image  (-t) add tag
+docker image push // //  ----> push to dockerhub
+docker container run -d --name web -p 8000:8080  ----> run docker container 
+docker container stop web   ----> stop the container 
+docker container start web   ----> start the container
+docker container rm web ---> delete the container
+docker-compose up -d ---> run multicontainer app
+docker swarm init ----> start swarm with one manager
+docker swarm join-token manager ---> add another manager
+docker swarm join-token worker ----> add worker
+docker service create --name web -p 8080:8080 --replicas 3 ALIMARAWAN2121/nameOfProj:name  ---> create docker service
+docker image pull redis ---> pull redis image 
+docker image inspect redis  ---> gets config file of image redis
+docker.io/nameofimage ----> address original image   
+docker container run -it NameOfImage (alpine) sh (shell to run in container) ---> run container and change cli to be inside it
+CTRL+P+Q   ---->  quit form inside conatainer shell 
+docker container exec -it (NO.ofID) 71 sh ----> get inside container
+docker volume create name  ----> create volume
+--mount source=name,target=/vol alpine:latest ----> attach volume to container
+docker secret create name NameOffile(containing the secret)  ----> create secret 
+--secret name ---> grant service access to the secret 
+docker stack deploy -c stackfile.yml name ----> deploy stack 
+
+                                                Dockerfile instructions 
+1- Always start with FROM
+2- <INSTRUCTION> <value>
+3- RUN = run commands and create layers
+4- COPY . = copies everything from dir into img
+5- COPY . /src
+6- WORKDIR /src = add metadata
+7- EXPOSE 8080 = specify port
+8- ENTRYPOINT ["MAIN.PY"] = run app
